@@ -1,3 +1,4 @@
+
 names = ["Alice", "Bob", "Charlie", "David", "Eve"]
 
 # Using a for loop

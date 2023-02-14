@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+  </head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <div class="modal-wrapper"></div>
+  <body>
+    <form action="{{ url_for('weather') }}" method="post">
+      <label for="location">Enter a location:</label>
+      <input type="text" id="location" name="location">
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>

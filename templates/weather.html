@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <h1>Weather in {{ location }}</h1>
+    <p>Current temperature: {{ current_temp }}</p>
+    <p>Current weather: {{ current_weather }}</p>
+    <h2>5-day forecast:</h2>
+    <ul>
+    {% for date, weather in forecast.items() %}
+      <li>{{ date }}: Temperature: {{ weather.temp }}, Weather: {{ weather.weather }}</li>
+    {% endfor %}
+    </ul>
+  </body>
+</html>
